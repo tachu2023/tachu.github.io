@@ -2,13 +2,110 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ゆうのポートフォリオサイト</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="たちゅのポートフォリオサイト">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <title>たちゅのポートフォリオサイト</title>
 </head>
 <body>
-  <h1>ゆう</h1>
-  <p>
-    UI/UXデザイナー見習いです！勉強中です！
-  </p>
+  <header id="header" class="container">
+    <div class="header-box">
+      <h1 class="header-title">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="ロゴ画像">
+        </a>
+      </h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li>
+            <a href="#">
+            <img src="img/icon-instagram.png" alt="インスタグラムアイコン">
+          </a>
+          </li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="main-visual">
+      <img id="mvpc" src="img/mainvisual-pc.jpg" alt="PC画面用メインビジュアル">
+      <img id="mvsp" src="img/mainvisual-sp.jpg" alt="SP画面用メインビジュアル">
+    </div>
+    <section id="about" class="container">
+      <h2 class="section-title">About</h2>
+      <ul class="about-list">
+        <li><p>たちゅ -   TACHU -</p></li>
+        <li>
+          <p>
+            神奈川県横須賀市在住<br>
+            Web製作見習い<br>
+            現役SE(ネットワークエンジニア, 19年目)
+          </p>
+        </li>
+        <li>
+          <p>
+            本業のSE職のかたわら、Web制作を副業として営んでおります。<br>
+            HTML, CSSを利用したWebページの制作、編集を承ります。<br>
+            Web制作は駆け出しとなりますが、より良い制作が出来る様日々スキルアップ中です。<br>
+            また、本業の知識を活かし、ネットワーク構築のご相談も承ります。<br>
+          </p>
+        </li>
+      </ul>
+
+    </section>
+    <section id="works" class="container">
+      <h2 class="section-title">Works</h2>
+      <p>
+        Web制作者としては駆け出しのため、自力で模写し作成したWebページを中心に掲載しておりますので予めご了承ください。<br>
+        この程度のHTML/CSSを組めるものとお考え頂ければと思います。<br>
+        今後、オリジナル作品や案件対応の実績を掲載予定です。
+        当ポートフォリオサイトはレスポンシブデザインで構築されております。
+      </p>
+      <ul class="works-list">
+        <li><a href="#"><img src="img/works1.jpg" alt="works1画像"></a>模写作品<br>(参考：<a href="https://code-step.com/" target="_blank">Codestep</a>様)</li>
+        <li><img src="img/comming.jpg" alt="works2画像"></li>
+        <li><img src="img/comming.jpg" alt="works3画像"></li>
+        <li><img src="img/comming.jpg" alt="works4画像"></li>
+        <li><img src="img/comming.jpg" alt="works5画像"></li>
+        <li><img src="img/comming.jpg" alt="works6画像"></li>
+      </ul>
+    </section>
+    <section id="News" class="container">
+      <h2 class="section-title">News</h2>
+      <dl class="news-list">
+        <dt>2023.01.29</dt>
+        <dd>ポートフォリオサイト開設！</dd>
+      </dl>
+    </section>
+    <section id="contact" class="container">
+      <h2 class="section-title">Contact</h2>
+      <p>お問い合わせは当ポートフォリオサイトを参照頂いたクラウドソーシングサイトのメッセージ機能よりお願い致します。</p>
+      <!-- <div class="input-box">
+        <label for="name">NAME</label>
+        <input type="text" id="name">
+      </div>    
+      <div class="input-box">
+        <label for="email">E-mail</label>
+        <input type="text" id="email">
+      </div>    
+      <div class="input-box">
+        <label for="message">MESSAGE</label>
+        <textarea id="message"></textarea>
+      </div>
+      <div id="button">
+        <a href="#">送信</a>
+      </div> -->
+    </section>
+  </main>
+  <footer id="footer" class="container">
+    <small>&copy; 2023 TACHU</small>
+  </footer>
 </body>
 </html>
