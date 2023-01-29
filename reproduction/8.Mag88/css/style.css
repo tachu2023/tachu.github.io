@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+/* common */
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 
+    Arial,
+    "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN",
+    Meiryo,
+    sans-serif;
+    font-size: 0.875rem;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+button {
+  height: 40px;
+  width: 140px;
+  margin-top: 40px;
+  border: 1px solid black;
+  font-size: 0.75rem;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* header */
+
+/* header {
+  background-color: pink;
+} */
+
+header .mainvisual {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/mainvisual.jpg);
+  background-size: cover;
+  background-position: 50% 0;
+}
+
+header .mainvisual img {
+  width: 120px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+/* main */
+/* ArchiveNew */
+
+#ArchiveNew {
+  padding-top: 80px;
+  padding-bottom: 64px;
+  text-align: center;
+}
+
+#ArchiveNew p {
+  margin-bottom: 32px;
+}
+
+#ArchiveNew .box {
+  display: flex;
+  gap: 20px;
+}
+
+#ArchiveNew .box-in-box {
+  position: relative;
+}
+
+#ArchiveNew .text-on-image {
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.425);
+  padding: 18px;
+  font-weight: bold;
+}
+
+#ArchiveNew h3 {
+  font-size: 1.25rem;
+}
+
+#FashionStyle {
+  height: 100vh;
+  padding-top: 64px;
+  text-align: center;
+  background: #f2f2f2;
+  background-image: url(../img/fashion.jpg);
+  background-size: cover;
+  background-position: 50% 0;
+}
+
+#CatalogAntique {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background: #f5f5f5;
+}
+
+#CatalogAntique .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 120px;
+}
+
+#CatalogAntique .box > * {
+  width: 48%;
+}
+
+#CatalogAntique .box-in-box {
+  padding-top: 36px;
+}
+
+#CatalogAntique .box-in-box > p {
+  margin-top: 36px;
+}
+
+#CatalogAntique button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+nav {
+  background: #333;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  height: 380px;
+}
+
+nav > * {
+  width: 33%;
+}
+
+nav h3 {
+  margin-bottom: 16px;
+}
+
+nav ul {
+  list-style-type: "- ";
+  padding-left: 8px;
+}
+
+nav img {
+  width: 120px;
+}
+
+nav li, nav p {
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+footer {
+  height: 76px;
+  line-height: 76px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+@media screen and (max-width: 896px) {
+  /* body {
+    background-color: red;
+  } */
+
+  #ArchiveNew .box {
+    flex-direction: column;
+  }
+  
+  #CatalogAntique .box {
+    flex-direction: column;
+    row-gap: 64px;
+}
+
+  #CatalogAntique .box > * {
+    width: 100%;
+  }
+  
+  #CatalogAntique .box-in-box {
+    padding-top: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 32px;
+    height: 450px;
+  }
+
+  nav > h1 {
+    text-align: center;;
+  }
+  
+  nav > * {
+    width: 100%;
+  }
+  
+}

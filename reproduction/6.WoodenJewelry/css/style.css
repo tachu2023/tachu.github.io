@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/* common */
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Crimson Text', serif;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-title {
+  width: 110px;
+  line-height: 1px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto 0;
+  padding: 0 18px 0;
+}
+
+/* header */
+
+#header {
+  width: 90vw;
+  margin: 34px auto 0;
+}
+
+.mainvisual img {
+  object-fit: cover;
+}
+
+
+#header .header-container {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  margin-top: 32px;
+}
+
+#header .header-menu ul {
+  display: flex;
+  gap: 30px;
+  font-size: 0.85rem;
+}
+
+/* main */
+
+#main {
+  margin-top: 64px;
+}
+
+.main-container {
+  display: flex;
+}
+
+.main-container div {
+  width: 50%;
+}
+
+.description {
+  padding: 0 56px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-message {
+  font-weight: normal;
+  /* font-size: 1.785rem; */
+}
+
+.section-title {
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+.section-text {
+  margin-top: 16px;
+  font-size: 0.95rem;
+}
+
+.main-container + .main-container {
+  margin-top: 64px;
+  flex-direction: row-reverse;
+}
+
+/* footer */
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 72px;
+  padding-bottom: 20px;
+}
+
+#footer small {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 767px) {
+
+  #header {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .mainvisual img {
+    height: 50vh;
+  }
+
+  #header .header-container {
+    margin: 20px 0 0 16px;
+  }
+    
+  .main-container {
+    flex-direction: column;
+  }
+  
+  .main-container div {
+    width: 100%;
+  }
+
+  .main-container + .main-container {
+    flex-direction: column;
+  }
+  
+  .description {
+    padding: 0;
+  }
+  
+  .section-message {
+    margin-top: 8px;
+    font-size: 1.25rem;
+  }
+  
+  .section-title {
+    margin-top: 8px;
+    font-size: 1rem;
+  }
+  
+  .section-text {
+    margin-top: 16px;
+    font-size: 0.95rem;
+  }
+  
+}

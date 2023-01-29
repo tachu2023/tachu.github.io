@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+/* common */
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #333;
+  font-size: 0.85rem;
+}
+
+img {
+  width: 100%;
+}
+
+.header-logo {
+  line-height: 0px;
+  width: 180px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.container + .container {
+  margin-top: 48px;
+}
+
+/* header */
+
+#header {
+  padding: 64px 0 16px;
+}
+
+/* main */
+
+#mainvisual {
+  margin-bottom: 64px;
+}
+
+/* index */
+
+#index {
+  background: rgb(242, 240, 240);
+  padding: 56px 0;
+}
+
+#index-box {
+  margin: 32px 56px 0;
+  padding: 32px auto;
+  border: 1px solid black;
+}
+
+#index-list {
+  display: table;
+  margin: 32px auto;
+}
+
+#index-list li + li {
+  margin-top: 16px;
+}
+
+#photos-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#photos-box img {
+  width: calc((100% - 16px) / 2);
+}
+
+#detail {
+  background: rgb(242, 240, 240);
+  padding: 56px 0;
+}
+
+#detail-box {
+  margin: 0 56px;
+  display: flex;
+  gap: 32px;
+}
+
+#detail-description {
+  margin-right: 32px;
+}
+
+#detail-description dt {
+  font-weight: bold; 
+}
+
+#detail-description dd {
+  margin-bottom: 8px  ;
+}
+
+#detail-unnumbered-list {
+  list-style: none;
+  border-left: 1px solid black;
+  padding-left: 32px;
+  width: 60%;
+}
+
+#detail-unnumbered-list li + li {
+  margin-top: 16px;
+}
+
+#detail-unnumbered-list a {
+  color: inherit;
+}
+
+#detail-unnumbered-list a:hover {
+  opacity: 0.8;
+}
+
+/* footer */
+
+#footer {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .container {
+    max-width: 800px;
+    width: calc(100% - 32px);
+    /* margin: 0 16px 0 16px; */
+    margin: 0 auto;
+  }
+  
+  #header {
+    padding-left: 8px;
+  }
+
+  #index {
+    padding: 32px 0;
+  }
+  
+  #index-box {
+    margin-right: 16px;
+    margin-left: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+    
+  #photos-box {
+    flex-direction: column;
+  }  
+  
+  #photos-box img {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto 0;
+  }
+
+  #detail {
+    padding: 32px 0;
+  }
+  
+  #detail-box {
+    flex-direction: column;
+    margin: 0 16px;
+}
+
+  #detail-unnumbered-list {
+    list-style: none;
+    border-top: 1px solid black;
+    border-left: none;
+    padding-top: 32px;
+    padding-left: 0;
+    width: 100%;
+  }
+   
+}

@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+/* common */
+
+html {
+  font-size: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #f4f9ff;
+  font-size: 0.925rem;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* small {
+  display: block;
+  margin-left: inherit;
+  padding-left: inherit;
+} */
+
+.header-logo {
+  width: 160px;
+  line-height: 0;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  /* padding: 16px 0; */
+}
+
+.inner {
+  width: 600px;
+  /* margin: 0 16px; */
+  margin: 0 auto;
+  padding: 0px;
+}
+
+/* header  */
+
+#header {
+  margin-top: 60px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* main */
+#mainvisual {
+  margin-bottom: 48px;
+}
+
+/* index */
+#index {
+  background: white;
+  margin-bottom: 60px;
+  /* padding: 30px; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#index-list li{
+  /* line-height: 2; */
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* detail */
+
+#detail {
+  margin-bottom: 60px;
+}
+
+#detail img {
+  margin: 30px;
+}
+
+#detail li {
+  padding: 16px 0;
+}
+
+#detail-box {
+  display: flex;
+  align-items: center;
+}
+
+#detail-box img {
+  width: 270px;
+  /* height: 270px;  */
+}
+
+#detail-list {
+  font-size: 0.9rem;
+  padding: 0;
+  margin-left: 16px;
+}
+
+#dlist {
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+}
+
+#detail-list dl {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 16px 0; */
+}
+
+#detail-list dt {
+  width: 25%;
+  margin: 0;
+}
+
+#detail-list dd {
+  width: 75%;
+  margin: 0;
+}
+
+#detail-list p {
+  padding-top: 8px;
+}
+
+/* footer */
+
+#footer {
+  padding-bottom: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 8px;
+  }
+
+  .wrapper {
+    max-width: 1000px;
+    width: auto;
+  }
+  
+  .inner {
+    max-width: 600px;
+    width: auto;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  #detail-box {
+    flex-direction: column;
+  }
+  
+  #detail-box img {
+    width: 100%;
+    height: auto; 
+  }
+
+  #detail-list {
+    margin-left: 0;
+  }
+}
